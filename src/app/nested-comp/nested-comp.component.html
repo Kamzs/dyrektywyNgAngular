@@ -10,19 +10,19 @@
   </tr>
   <tr>
     <td >
-      <p>object created: {{something.created}}</p>
+      <p>object created: {{something.created | date:'medium'}}</p>
     </td >
 
   </tr>
   <tr>
     <td >
-      <p>object name: {{something.name}}</p>
+      <p>object name: {{something.name | uppercase }}</p>
     </td >
 
   </tr>
   <tr>
     <td >
-      <p>{{someMethod()}}</p>
+      <p>{{someMethod()| date:'shortTime'}}</p>
     </td >
 
   </tr>
