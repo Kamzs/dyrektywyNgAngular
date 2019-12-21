@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NestedCompComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() {}
 
   ngOnInit() {
   }
 
+    // tslint:disable-next-line: no-inferrable-types
+    zmienna: string = 'wartość zmiennej = nested-comp works!';
+
+    something: SomeObject = new SomeObject('someobject');
+
+    someMethod():string {
+      return 'some field of object returned using method: ' + this.something.created;
+    }
+
+}
+
+class SomeObject {
+  name: string;
+  created: Date;
+
+  constructor(name: string){
+    this.name = name;
+    this.created = new Date;
+  }
 }
