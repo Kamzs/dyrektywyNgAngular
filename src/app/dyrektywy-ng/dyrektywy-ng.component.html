@@ -1,8 +1,8 @@
-<p>dyrektywy-ng - ng for TABLE</p>
+<p>ngFor</p>
 
 
-<div *ngFor="let element of table">
-  {{element}}
+<div *ngFor="let element of table; let i = index">
+{{i+1}}: {{element}}
 
 </div>
 
