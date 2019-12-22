@@ -1,0 +1,9 @@
+<h2>switch</h2>
+<ng-container *ngFor="let element of table">
+<div [ngSwitch]="element">
+  <div *ngSwitchCase="'dzien1'">Day1</div>
+  <div *ngSwitchCase="'dzien2'">Day2</div>
+  <div *ngSwitchCase="'dzien3'">Day3</div>
+  <div *ngSwitchDefault>Day4</div>
+</div>
+</ng-container>

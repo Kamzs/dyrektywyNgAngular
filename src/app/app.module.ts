@@ -6,6 +6,7 @@ import { NestedCompComponent } from './nested-comp/nested-comp.component';
 import { ContentCompComponent } from './content-comp/content-comp.component';
 import { DyrektywyNGComponent } from './dyrektywy-ng/dyrektywy-ng.component';
 import { DyrektywyNgIfComponent } from './dyrektywy-ng-if/dyrektywy-ng-if.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DyrektywyNgIfComponent } from './dyrektywy-ng-if/dyrektywy-ng-if.compon
     NestedCompComponent,
     ContentCompComponent,
     DyrektywyNGComponent,
-    DyrektywyNgIfComponent
+    DyrektywyNgIfComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule
