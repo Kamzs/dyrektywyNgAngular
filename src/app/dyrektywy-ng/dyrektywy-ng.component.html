@@ -1,24 +1,20 @@
-<p>ngFor / ngIf</p>
+<h2>ngFor oraz ngContainer</h2>
 
-
+<br> przykład 1 <br>
 <div *ngFor="let element of table; let i = index">
 {{i+1}}: {{element}}
 </div>
 
+<br> przykład 2 <br>
 <ul>
   <li *ngFor="let data of array">
     {{data.name}}    {{data.id}}
 
   </li>
 </ul>
-w przypadku gdy element = wt to wyswietla a w przeciwnym wypadku stosuje instrukcje ng-template
-<div *ngFor="let element of table; let i = index">
 
-<ng-container *ngIf="element == 'wt'; else printError">
-{{i + 1}} : {{element}}
+<br> przykład 3 <br>
+<ng-container *ngFor="let element of table; let i = index">
+  {{i+1}}: {{element}} <br>
+
 </ng-container>
-</div>
-
-<ng-template #printError>
- not wt
-</ng-template>

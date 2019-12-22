@@ -1,0 +1,35 @@
+<h2>ngIf oraz ngTemplate</h2>
+
+*ngIf
+w przypadku gdy element = data15 to wyswietla a w przeciwnym wypadku stosuje instrukcje ng-template
+<br>
+//sposób 1
+<div *ngFor="let element of table; let i = index">
+
+<ng-container *ngIf="element == 'data15'; else printError">
+{{i + 1}} : {{element}}
+</ng-container>
+</div>
+
+<ng-template #printError>
+ not wt
+</ng-template>
+<br>
+//sposób 2
+
+<div *ngFor="let element of table; let i = index">
+
+  <ng-container *ngIf="element == 'data15'; then printOk; else printNotOK">
+  </ng-container>
+
+  <ng-template #printOk>
+    {{i + 1}} : {{element}}
+   </ng-template>
+
+  <ng-template #printNotOK>
+    {{element}} - is not data15
+   </ng-template>
+
+  </div>
+
+
