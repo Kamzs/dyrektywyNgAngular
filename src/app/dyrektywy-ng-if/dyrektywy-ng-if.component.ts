@@ -8,11 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DyrektywyNgIfComponent implements OnInit {
 
   table: string[] =  ['data15', 'data1', 'data1', 'data1', 'data1'];
-
   array: Array<Model> = [new Model('someid3', 'somename4'), new Model('someid6', 'somename5')];
 
   constructor() {}
-
   ngOnInit() {
   }
 
